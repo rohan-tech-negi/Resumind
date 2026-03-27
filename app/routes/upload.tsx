@@ -110,7 +110,7 @@ const Upload = () => {
     }
 
     return (
-        <main className="bg-[#FAFAFC] min-h-screen relative flex flex-col pt-32 pb-20 overflow-hidden">
+        <main className="bg-[#FAFAFC] min-h-screen relative flex flex-col pt-28 pb-20">
             <Navbar />
 
             {/* Background elements */}
