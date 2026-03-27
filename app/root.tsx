@@ -41,6 +41,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        <div className="grain-overlay pointer-events-none fixed inset-0 z-50" />
         <script src="https://js.puter.com/v2/"></script>
         {children}
         <ScrollRestoration />
