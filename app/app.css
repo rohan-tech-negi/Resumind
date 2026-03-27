@@ -27,7 +27,7 @@ body {
 }
 
 main {
-  @apply min-h-screen pt-10 overflow-hidden relative;
+  @apply min-h-screen pt-10 relative;
 }
 
 /* Base Grain Texture overlay */
@@ -51,11 +51,21 @@ label {
   @apply text-dark-200;
 }
 input {
-  @apply w-full p-4 inset-shadow rounded-2xl focus:outline-none bg-white;
+  @apply w-full p-4 inset-shadow rounded-2xl bg-white outline-none;
+}
+input:focus {
+  box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.01), 0 0 0 3px rgba(142,152,255,0.2);
+  border-color: rgba(142,152,255,0.4);
+  background-color: #fff;
 }
 
 textarea {
-  @apply w-full p-4 inset-shadow rounded-2xl focus:outline-none bg-white;
+  @apply w-full p-4 inset-shadow rounded-2xl bg-white outline-none;
+}
+textarea:focus {
+  box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.01), 0 0 0 3px rgba(142,152,255,0.2);
+  border-color: rgba(142,152,255,0.4);
+  background-color: #fff;
 }
 
 form {
@@ -166,12 +176,6 @@ form {
   background-color: rgba(255,255,255,0.8);
   border: 1px solid rgba(142,152,255,0.1);
   transition: all 0.3s ease;
-  
-  &:focus {
-    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.01), 0 0 0 3px rgba(142, 152, 255, 0.2);
-    border-color: rgba(142, 152, 255, 0.4);
-    background-color: #fff;
-  }
 }
 
 @keyframes fadeIn {
